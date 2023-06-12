@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.bg-gradient-custom {
+    background: linear-gradient(to right, #ff0000, #0000ff);
+  }
+.stile{
+    background-color: #3030cf;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+
+}
+.stileAdd{
+    background-color: #3030cf;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+.imgThumb{
+    width: 120px;
+    border-radius: 40%;
+}
+.myText{
+    font-family: 'Foldit', cursive;
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(25, 65, 65);
+    text-shadow: 3px 5px 3px rgba(9, 15, 95, 0.5);
+}
+.myTextNavbar{
+  font-family: 'Foldit', cursive;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(4, 54, 54);
+  text-shadow: 3px 5px 3px rgba(9, 15, 95, 0.5);
+  margin-left: 10%;
+}
+.myTextNavbarHome{
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid 1px white;
+  border-radius: 20%;
+  font-size: .8rem;
+  padding: 10px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(4, 54, 54);
+  text-shadow: 3px 5px 3px rgba(9, 15, 95, 0.5);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.boxImg{
+  border-radius: 20%;
+  margin-bottom: 2%;
+}
+
+.cellPic{
+    width: 5rem;
+    align-items: center;
+}
+.modalText{
+    font-size: large;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+.cardShadow{
+  box-shadow: 5px 5px 15px 5px #8b5ad4;
+}
+.btn-3d {
+  perspective: 1000px;
+}
+
+.btn-3d:hover {
+  transform: scale(1.05) rotateY(360deg);
+  transition: transform 2.5s ease;
+}
+.btn-pic {
+  perspective: 1000px;
+}
+
+.btn-pic:hover {
+  transform: scale(1.8) ;
+  transition: transform 1.5s ease;
+}
+.cardDetail{
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.stileDetail{
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px;
+  
+}
+
+
+/*Footer*/
+#footer {
+    max-width: 1000px;
+    margin-top: 10rem !important;
+  }
+  #footer .socials a {
+    color: #ffffff70;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+  }
+  #footer .socials a:hover {
+    color: #ffffff;
+  }
+  #footer div.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  #footer div.item a {
+    text-decoration: none;
+    color: #ffffff70;
+    font-size: 0.7rem;
+  }
+  #footer div.item a:hover {
+    text-decoration: underline;
+  }
+  #footer button.love{
+    background-color: #00000000;
+    color: #ffffff70;
+    border: #ffffff70 solid 1px;
+    padding: 5px;
+    margin-bottom: 2rem;
+    border-radius: 2px;
+  }
+  #footer button.love:hover{
+    background-color: #ffffff70;
+    color: #000000;
+    border: rgba(0, 0, 0, 0) solid 1px;
+  }
+  #footer p:last-of-type {
+    font-size: 0.6rem;
+    color: #ffffff70;
+  }

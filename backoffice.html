@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Foldit:wght@400;500&family=Outfit:wght@300;400;500&family=Pacifico&family=Roboto:ital,wght@0,500;0,900;1,300&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Backoffice</title>
+
+</head>
+<body class="ms-1 me-1">
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-dark sticky-top ">
+    <div class="container-fluid">
+        <img class="imgThumb" src="assets/cellworld.png" alt="logo negozio">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-light align-items-center myTextNavbarHome" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          </li> 
+          <li class="nav-item d-flex  align-items-center">
+            <span class="myTextNavbar">BACKOFFICE</span>
+          </li>
+                                 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- tabella oggetti -->
+<table class="table table-striped">
+    <thead>
+      <tr class="text-info bg-dark ">
+        <th scope="col">Name of product</th>
+        <th scope="col">Description</th>
+        <th scope="col">Brand</th>
+        <th scope="col">imageUrl</th>
+        <th scope="col">Price</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody id="result-box">
+          
+    </tbody>
+  </table>
+
+<!-- sezione dei campi di input -->
+    <section class="sticky-bottom">
+      <div class="stileAdd">
+      <span class="stileAdd">Add new products to the catalog <i class="fa-solid fa-file-circle-plus"></i> </span>
+        <div class="stile d-flex justify-content-around">
+          
+            <input id="inputName" type="text" class="form-control rounded" placeholder="Name">
+            <input id="inputDesc" type="text" class="form-control rounded" placeholder="Description">
+            <input id="inputBrand" type="text" class="form-control rounded"  placeholder="Brand">
+            <input id="imgUrl" type="text" class="form-control rounded" placeholder="Image URL">
+            <input id="inputPrice" type="number" class="form-control rounded" placeholder="Price">
+            <button id="addBtn" class="btn btn-primary m-2">Go!<i class="fa-solid fa-upload"></i></i></button>
+        </div>
+      </div>
+        </section>
+
+<!-- modale per l'edit degli elementi (metodo PUT)-->        
+<div class="modal" id="modaleEdit" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title myText">Modifica dati dei prodotti</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body stile">
+          <input id="upName" type="text" placeholder="Name">
+          <input id="upDesc" type="text" placeholder="Description">
+          <input id="upBrand" type="text"  placeholder="Brand">
+          <input id="upPrice" type="number"  placeholder="Price">
+          <input id="upUrl" type="text"  placeholder="Image">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="updateItems()" data-bs-dismiss="modal">Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="backoffice.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/94c4c4af99.js" crossorigin="anonymous"></script>
+</body>
+</html>
